@@ -6,7 +6,7 @@
 /*   By: tfrances <tfrances@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 21:55:16 by tfrances          #+#    #+#             */
-/*   Updated: 2025/09/14 22:50:22 by tfrances         ###   ########.fr       */
+/*   Updated: 2025/09/14 22:51:11 by tfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 		i++;
 	}
 	size_len += (ft_strlen(sep) * (size));
-	res = (char *)malloc(sizeof(char) * (100000) + 1);
+	res = (char *)malloc(sizeof(char) * (size_len) + 1);
 	i = 0;
 	res = "";
 	ft_putstr(res);
