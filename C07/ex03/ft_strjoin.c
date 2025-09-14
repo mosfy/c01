@@ -6,7 +6,7 @@
 /*   By: tfrances <tfrances@student.42lehavre.fr>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 21:55:16 by tfrances          #+#    #+#             */
-/*   Updated: 2025/09/14 22:51:11 by tfrances         ###   ########.fr       */
+/*   Updated: 2025/09/14 23:21:27 by tfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,27 +65,32 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		i;
 
 	i = 0;
+	size_len = 0;
+	if (size <= 0)
+	{
+		res = (char *)malloc(0);
+		if (res == NULL)
+			return (res);
+		return (res);
+	}
 	while (i < size)
 	{
-		size_len += ft_strlen(strs[i]);
-		i++;
+		size_len += ft_strlen(strs[i++]);
 	}
 	size_len += (ft_strlen(sep) * (size));
-	res = (char *)malloc(sizeof(char) * (size_len) + 1);
+	res = (char *)malloc(sizeof(char) * (size_len + 1));
 	i = 0;
-	res = "";
 	ft_putstr(res);
-	while (i < 2)
+	while (i < size)
 	{
-		//ft_strcat(res, strs[i]);
+		ft_strcat(res, strs[i++]);
 		ft_strcat(res, sep);
-		i++;
 	}
 	return (res);
 }
 
-int	main(int argc, char **argv)
-{
-	char *test = ft_strjoin(argc - 1,argv," | ");
-	ft_putstr(test);
-}
+// int	main(int argc, char **argv)
+// {
+// 	char *test = ft_strjoin(0,argv," ");
+// 	ft_putstr(test);
+// }
