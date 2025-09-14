@@ -6,14 +6,13 @@
 /*   By: tfrances <tfrances@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/10 17:48:38 by tfrances          #+#    #+#             */
-/*   Updated: 2025/09/12 00:57:35 by tfrances         ###   ########.fr       */
+/*   Updated: 2025/09/14 05:24:47 by tfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h> 
-
 
 void	ft_putstr(char *str)
 {
@@ -57,15 +56,14 @@ int	main(int argc, char *argv[])
 		j = i;
 		while (j < argc)
 		{
-			if (ft_strcmp(argv[i],argv[j]) > 0)
+			if (ft_strcmp(argv[i], argv[j]) > 0)
 			{
-				ft_swap(&argv[i],&argv[j]);
+				ft_swap(&argv[i], &argv[j]);
 			}
 			j++;
 		}
 		i++;
 	}
-
 	i = 1;
 	while (argc > i)
 	{
