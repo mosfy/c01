@@ -6,7 +6,7 @@
 /*   By: tfrances <tfrances@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/13 00:55:46 by tfrances          #+#    #+#             */
-/*   Updated: 2025/09/13 01:28:59 by tfrances         ###   ########.fr       */
+/*   Updated: 2025/09/14 00:41:32 by tfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,18 @@ int	*ft_range(int min, int max)
 	return (res);
 }
 
-int main()
-{
-	int *test;
-	int min  = 4;
-	int max  = 3;
-	int size = max - min;
-	int i = 0;
+// int main()
+// {
+// 	int *test;
+// 	int min  = 4;
+// 	int max  = 3;
+// 	int size = max - min;
+// 	int i = 0;
 
-	test = ft_range(min, max);
-	while (i < size)
-	{
-		printf("%d", test[i]);
-		i++;
-	}
-}
+// 	test = ft_range(min, max);
+// 	while (i < size)
+// 	{
+// 		printf("%d", test[i]);
+// 		i++;
+// 	}
+// }

@@ -6,7 +6,7 @@
 /*   By: tfrances <tfrances@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/12 01:12:55 by tfrances          #+#    #+#             */
-/*   Updated: 2025/09/13 00:39:05 by tfrances         ###   ########.fr       */
+/*   Updated: 2025/09/14 00:42:21 by tfrances         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,7 @@ char	*ft_strdup(char *src)
 
 	i = 0;
 	size = ft_strlen(src);
-	dest = (char*) malloc(sizeof (size) + 1);
-
+	dest = (char *)malloc(sizeof(size) + 1);
 	while (src[i])
 	{
 		dest[i] = src[i];
